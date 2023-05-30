@@ -1,0 +1,53 @@
+{
+  "clearInfo": {
+    "clearUrl": "api/clear.json"
+  },
+  "homeInfo": {
+    "title": "首页",
+    "icon": "fa fa-home",
+    "href": "page/welcome.html"
+  },
+  "logoInfo": {
+    "title": "DcsSchedule",
+    "image": "images/logo.png",
+    "href": ""
+  },
+  "menuInfo": {
+    "currency": {
+      "title": "服务管理",
+      "icon": "fa fa-address-book",
+      "child": [
+        {
+          "title": "活动中心",
+          "href": "",
+          "icon": "fa fa-calendar",
+          "target": "_self",
+          "child": [
+            {
+              "title": "抽奖活动列表",
+              "href": "lottery/activity.html",
+              "icon": "fa fa-list-alt",
+              "target": "_self"
+            },
+            {
+              "title": "抽奖活动配置",
+              "href": "lottery/activity.html"
+            },
+            {
+              "title": "抽奖策略配置",
+              "href": "lottery/activity.html"
+            },
+            {
+              "title": "抽奖奖品配置",
+              "href": "lottery/activity.html"
+            },
+            {
+              "title": "抽奖人群管理",
+              "href": "lottery/activity.html"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

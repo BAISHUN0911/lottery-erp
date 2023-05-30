@@ -1,0 +1,34 @@
+server:
+  port: 8082
+
+
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+
+# nacos 配置中心
+nacos:
+  discovery:
+    server-addr: 101.43.111.227:8848
+
+# Dubbo 广播方式配置
+dubbo:
+  application:
+    name: Lottery
+    version: 1.0.0
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://101.43.111.227:8848
+  scan:
+    base-packages: cn.itedus.lottery.rpc.*
+
+logging:
+  file:
+    path: D:/Project/Lottery-ERP/erpLog.log
+  level:
+    org:
+      springframework: debug
